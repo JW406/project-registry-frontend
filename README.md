@@ -1,27 +1,40 @@
-# P3Frontend
+# Project Registry Project Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
+## Project Description
+This application aims to assist Revature's Internal development team to organize batch Capstone Projects (otherwise known as Project 3's). Project Registry tracks, maintains, and visualizes project metrics and states. The application provides a better way to organize the different stages of the Project 3 workflow and accommodate for business processes (such as: present backlog to trainer, provision cloud resources, correspond with trainer to set up meetings).
 
-## Development server
+## Technologies Used
+* Angular11
+* Agile-Scrum
+* Git
+* Spring Boot
+* Spring Data
+* Jasmine
+* JUnit4
+* REST
+* AWS EC2
+* AWS S3
+* Postman
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Features
+* Project Registry tracks, maintains, and visualizes project metrics and states
+* The application provides a better way to organize the different stages of the Project 3 workflow and accommodate for business processes.
+* The applilcation presents backlog to trainer, provision cloud resources, and correspond with trainer to set up meetings.
 
-## Code scaffolding
+To-do list:
+* Allowed user to create a technology tag that they can attach to a project.
+* Allowed user to deactivate a tag to indicate that they can no longer attach it to a project.
+* Allowed user to add statuses 'Available' and 'Planned' to their projects.
+* Made phase a part of iterations instead of projects.
+* Refactored existing timeline view away from current library Gantt Timeline Schedule Calendar.
+* Color-coded timeline based on assigned project.
+* Allowed user to create or edit an iteration by clicking on a batch in the timeline view.
+* Allowed user to be automatically updated with statuses based on iterations.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started
 
-## Build
+## Usage
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Contributors
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## License
