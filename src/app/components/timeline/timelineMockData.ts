@@ -1,143 +1,162 @@
 export const mockData = [
   {
-    "id": 1,
-    "batchId": "praesent",
-    "startDate": "2021-04-13",
-    "skill": "JNI",
-    "location": "China",
-    "endDate": "2021-08-19"
-  }, {
-    "id": 2,
-    "batchId": "nulla",
-    "startDate": "2021-04-23",
-    "skill": "JProbe",
-    "location": "Indonesia",
-    "endDate": "2021-08-03"
-  }, {
-    "id": 3,
-    "batchId": "congue",
-    "startDate": "2021-05-13",
-    "skill": "International HR",
-    "location": "Honduras",
-    "endDate": "2021-06-07"
-  }, {
-    "id": 4,
-    "batchId": "feugiat",
-    "startDate": "2021-05-01",
-    "skill": "Get Along Well with Others",
-    "location": "Japan",
-    "endDate": "2021-06-11"
-  }, {
-    "id": 5,
-    "batchId": "eleifend",
-    "startDate": "2021-04-12",
-    "skill": "Evangelism",
-    "location": "Malaysia",
-    "endDate": "2021-07-20"
-  }, {
-    "id": 6,
-    "batchId": "eget",
-    "startDate": "2021-03-14",
-    "skill": "NSI",
-    "location": "Philippines",
-    "endDate": "2021-08-16"
-  }, {
-    "id": 7,
-    "batchId": "nam",
-    "startDate": "2021-04-30",
-    "skill": "TCD",
-    "location": "Sweden",
-    "endDate": "2021-06-02"
-  }, {
-    "id": 8,
-    "batchId": "pede",
-    "startDate": "2021-03-15",
-    "skill": "LCSH",
-    "location": "China",
-    "endDate": "2021-07-12"
-  }, {
-    "id": 9,
-    "batchId": "suspendisse",
-    "startDate": "2021-04-06",
-    "skill": "Biochemistry",
-    "location": "Brazil",
-    "endDate": "2021-08-11"
-  }, {
-    "id": 10,
-    "batchId": "egestas",
-    "startDate": "2021-05-12",
-    "skill": "CXF",
-    "location": "Ukraine",
-    "endDate": "2021-07-06"
-  }, {
-    "id": 11,
-    "batchId": "id",
-    "startDate": "2021-03-25",
-    "skill": "CPOE",
-    "location": "Japan",
-    "endDate": "2021-08-16"
-  }, {
-    "id": 12,
-    "batchId": "blandit",
-    "startDate": "2021-04-04",
-    "skill": "YouTube",
-    "location": "Russia",
-    "endDate": "2021-06-29"
-  }, {
-    "id": 13,
-    "batchId": "viverra",
-    "startDate": "2021-05-13",
-    "skill": "Oil Paint",
-    "location": "Sweden",
-    "endDate": "2021-06-03"
-  }, {
-    "id": 14,
-    "batchId": "erat",
-    "startDate": "2021-04-16",
-    "skill": "Hotels",
-    "location": "China",
-    "endDate": "2021-08-06"
-  }, {
-    "id": 15,
-    "batchId": "accumsan",
-    "startDate": "2021-03-23",
-    "skill": "TDP",
-    "location": "Mexico",
-    "endDate": "2021-06-25"
-  }, {
-    "id": 16,
-    "batchId": "potenti",
-    "startDate": "2021-05-02",
-    "skill": "Xerces",
-    "location": "Indonesia",
-    "endDate": "2021-08-26"
-  }, {
-    "id": 17,
-    "batchId": "nunc",
-    "startDate": "2021-03-29",
-    "skill": "HDMI",
-    "location": "Sweden",
-    "endDate": "2021-06-05"
-  }, {
-    "id": 18,
-    "batchId": "ut",
-    "startDate": "2021-03-18",
-    "skill": "IVDD",
-    "location": "China",
-    "endDate": "2021-07-10"
-  }, {
-    "id": 19,
-    "batchId": "elementum",
-    "startDate": "2021-05-20",
-    "skill": "Distribution Center Operations",
-    "location": "Dominican Republic",
-    "endDate": "2021-06-07"
-  }, {
-    "id": 20,
-    "batchId": "amet",
-    "startDate": "2021-04-11",
-    "skill": "Western Blotting",
-    "location": "Sweden",
-    "endDate": "2021-08-07"
-  }
-]
+    id: 1,
+    batchId: 'praesent',
+    startDate: '2021-07-26',
+    skill: 'JNI',
+    location: 'China',
+    endDate: '2021-08-19',
+  },
+  {
+    id: 2,
+    batchId: 'nulla',
+    startDate: '2021-04-23',
+    skill: 'JProbe',
+    location: 'Indonesia',
+    endDate: '2021-08-03',
+  },
+  {
+    id: 3,
+    batchId: 'congue',
+    startDate: '2021-05-13',
+    skill: 'International HR',
+    location: 'Honduras',
+    endDate: '2021-06-07',
+  },
+  {
+    id: 4,
+    batchId: 'feugiat',
+    startDate: '2021-05-01',
+    skill: 'Get Along Well with Others',
+    location: 'Japan',
+    endDate: '2021-06-11',
+  },
+  {
+    id: 5,
+    batchId: 'eleifend',
+    startDate: '2021-04-12',
+    skill: 'Evangelism',
+    location: 'Malaysia',
+    endDate: '2021-07-20',
+  },
+  {
+    id: 6,
+    batchId: 'eget',
+    startDate: '2021-03-14',
+    skill: 'NSI',
+    location: 'Philippines',
+    endDate: '2021-08-16',
+  },
+  {
+    id: 7,
+    batchId: 'nam',
+    startDate: '2021-04-30',
+    skill: 'TCD',
+    location: 'Sweden',
+    endDate: '2021-06-02',
+  },
+  {
+    id: 8,
+    batchId: 'pede',
+    startDate: '2021-03-15',
+    skill: 'LCSH',
+    location: 'China',
+    endDate: '2021-07-12',
+  },
+  {
+    id: 9,
+    batchId: 'suspendisse',
+    startDate: '2021-04-06',
+    skill: 'Biochemistry',
+    location: 'Brazil',
+    endDate: '2021-08-11',
+  },
+  {
+    id: 10,
+    batchId: 'egestas',
+    startDate: '2021-05-12',
+    skill: 'CXF',
+    location: 'Ukraine',
+    endDate: '2021-07-06',
+  },
+  {
+    id: 11,
+    batchId: 'id',
+    startDate: '2021-07-25',
+    skill: 'CPOE',
+    location: 'Japan',
+    endDate: '2021-08-16',
+  },
+  {
+    id: 12,
+    batchId: 'blandit',
+    startDate: '2021-04-04',
+    skill: 'YouTube',
+    location: 'Russia',
+    endDate: '2021-06-29',
+  },
+  {
+    id: 13,
+    batchId: 'viverra',
+    startDate: '2021-05-13',
+    skill: 'Oil Paint',
+    location: 'Sweden',
+    endDate: '2021-06-03',
+  },
+  {
+    id: 14,
+    batchId: 'erat',
+    startDate: '2021-04-16',
+    skill: 'Hotels',
+    location: 'China',
+    endDate: '2021-08-06',
+  },
+  {
+    id: 15,
+    batchId: 'accumsan',
+    startDate: '2021-03-23',
+    skill: 'TDP',
+    location: 'Mexico',
+    endDate: '2021-06-25',
+  },
+  {
+    id: 16,
+    batchId: 'potenti',
+    startDate: '2021-07-27',
+    skill: 'Xerces',
+    location: 'Indonesia',
+    endDate: '2021-08-26',
+  },
+  {
+    id: 17,
+    batchId: 'nunc',
+    startDate: '2021-03-29',
+    skill: 'HDMI',
+    location: 'Sweden',
+    endDate: '2021-06-05',
+  },
+  {
+    id: 18,
+    batchId: 'ut',
+    startDate: '2021-03-18',
+    skill: 'IVDD',
+    location: 'China',
+    endDate: '2021-07-10',
+  },
+  {
+    id: 19,
+    batchId: 'elementum',
+    startDate: '2021-05-20',
+    skill: 'Distribution Center Operations',
+    location: 'Dominican Republic',
+    endDate: '2021-06-07',
+  },
+  {
+    id: 20,
+    batchId: 'amet',
+    startDate: '2021-04-11',
+    skill: 'Western Blotting',
+    location: 'Sweden',
+    endDate: '2021-08-07',
+  },
+];

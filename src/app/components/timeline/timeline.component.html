@@ -1,2 +1,15 @@
 <h1 id="anime" class="welcome">P3 Timeline</h1>
-<div class="gstc-wrapper" #gstcElement></div>
+<div class="timeline-table" #ngxTs *ngIf="items.length">
+  <ngx-ts
+    *ngIf="items.length"
+    [items]="items"
+    [sections]="sections"
+    [periods]="periods"
+    [showBusinessDayOnly]="false"
+    [allowDragging]="false"
+    [showGoto]="false"
+    [showToday]="false"
+    [showCurrentTime]="false"
+    [start]="timelineLowerBound"
+  ></ngx-ts>
+</div>

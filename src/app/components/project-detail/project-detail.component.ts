@@ -66,44 +66,25 @@ export class ProjectDetailComponent implements OnInit {
 
 
   //Temporary model
-  model = new Project(1, "name", new Status(1, "name", "desc"), "sample desc", new User(1, "username", new Role(1, "string")), [], new Phase(1, "BACKLOG_GENERATED", "CoE has completed the iterations backlog, awaiting trainer approval"));
+
+  model = new Project(1, "name", new Status(1, "name"), "sample desc", new User(1, "username", new Role(1, "string")), [], new Phase(1, "BACKLOG_GENERATED", "CoE has completed the iterations backlog, awaiting trainer approval"));
 
   submitted = false;
 
   onSubmit() { this.submitted = true; }
 
-  //needed?
-  // submitted = false;
-  // onSubmit() { this.submitted = true; }
-
-
-
-  // ----------- Group5 Iterator: Passing batch to detail-project
   sendBatch ?: BatchTemplate;
   iteration?: Iteration ;
   tempIteration?: Iteration ;
-
-
-
-  // set emit event value to batchIdNum and batchBatchIdStr
-  // CHECK CONSOLE FOR ID AND BATCHID
 
   changeBatch(value:BatchTemplate){
     this.sendBatch = value;
     console.log(this.sendBatch);
   }
-
-  // ------------ end Group5 Iterator: Passing batch to view-projec
-
-
-                            //change to this once project is connected
-  public desiredId:number=1 //this.router.snapshot.params['id'];
+  public desiredId:number=1 
   public projects?:Project[]=[]
 
-  // Group 5: accidently mess up and forget what it used to be. So we put ?
-  public project?:Project ;
-
-
+  public project?:Project;
 
   ngOnInit(): void {
 
@@ -114,64 +95,37 @@ export class ProjectDetailComponent implements OnInit {
     if(this.project.id==0){
       this.route.navigate([''])
     }
-    console.log(this.project);
-    console.log(this.arr);
   }
 
   //Update Project in the backend
   public submit():void{
+    if (!this.project){ return }
 
-    // Team5 space
-    //batchId:String, batchProject:Project, id: String, startDate: string, endDate: string
-    if (this.sendBatch && this.project){
+    if (this.sendBatch){
       this.iteration = new Iteration(this.sendBatch.batchId, this.project, this.sendBatch.id, this.sendBatch.startDate, this.sendBatch.endDate);
-      console.log(this.iteration);
-
     }
 
-    // -- End team5 space
+    //Setting the status id
+    this.project.status.id=this.statusMap[this.project.status.name];
 
-    //Check that button is connected
-
-    //console.log("submit");
-
-    if (this.project){
-
-      //Setting the status id
-      this.project.status.id=this.statusMap[this.project.status.name];
-      console.log(`status sending: ${this.project.status.name}`);
-
-      if(this.project != undefined)
-      {
-        console.log(this.project.phase.kind)
-        var phaseFound = this.phaseService.phases.find(p=>{
-          console.log(p);
-          console.log(p.kind)
-          if(this.project){
-
-            return p.kind==this.project.phase.kind
-          }
-          else {
-            return false
-          }
-        });
-        console.log(phaseFound)
-        if(phaseFound!=undefined)
-          this.project.phase = phaseFound;
-      }
-      //check TS updates
-      //this.project.name="rideForceTest";
-
-      this.project.tags = this.arr;
-
-      this.projectService.updateProject(this.project).subscribe((data)=>{
-        this.project=data;
-        console.log(data)
-        this.route.navigate(['viewProject']);
+    if(this.project != undefined){
+      let phaseFound = this.phaseService.phases.find(p=>{
+        if(this.project){
+          return p.kind==this.project.phase.kind
+        }
+        else {
+          return false
+        }
       });
+      if(phaseFound!=undefined)
+        this.project.phase = phaseFound;
     }
-    //
-    // window.location.href = "http://localhost:4200/";
+    this.project.tags = this.arr;
+
+    this.projectService.updateProject(this.project).subscribe((data)=>{
+      this.project=data;
+      this.route.navigate(['viewProject']);
+    });
   }
 
   goBack():void {

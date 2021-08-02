@@ -1,5 +1,48 @@
+/* Why are we not using scss? */
+
 h1 {
-    text-align: center;
-    padding: 10px 20px;
-    font-size: 220%;
-  }
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 220%;
+}
+
+/* Left hand side headers */
+::ng-deep .time-sch-wrapper .time-sch-section {
+  font-weight: 500;
+}
+
+/* Each timeline */
+::ng-deep .time-sch-wrapper .time-sch-item {
+  background-color: rgb(231, 76, 60) !important;
+  height: 40px;
+  line-height: 40px;
+}
+::ng-deep .time-sch-wrapper .time-sch-item .time-sch-item-content {
+  padding: 0 0 0 16px;
+}
+
+/* Month styling */
+::ng-deep .time-sch-wrapper .time-sch-table > tr:first-of-type > td:not(:first-of-type) {
+  padding-left: 1rem;
+  text-align: left !important;
+}
+
+::ng-deep .time-sch-wrapper tr:nth-of-type(2) > td {
+  width: 90px;
+}
+
+/* Hide some unwanted styings from the library */
+::ng-deep .time-sch-wrapper .time-sch-header-wrapper,
+::ng-deep .time-sch-wrapper .time-sch-time-container,
+::ng-deep .time-sch-wrapper .time-sch-period-container,
+::ng-deep .time-sch-wrapper .time-sch-header-wrapper > h3,
+::ng-deep .time-sch-wrapper .time-sch-item-end,
+::ng-deep .time-sch-wrapper .time-sch-item-start {
+  display: none;
+}
+
+/* Top level styling */
+::ng-deep .time-sch-wrapper {
+  color: #404244;
+  background-color: rgb(249, 250, 251);
+}

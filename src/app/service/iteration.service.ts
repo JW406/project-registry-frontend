@@ -41,8 +41,7 @@ export class IterationService {
 
   sendIteration(iteration: Iteration): Observable<Iteration> {
     console.log('Here is the iteration we\'re about to send: ' + JSON.stringify(iteration));
-    return this.http.post<Iteration>(`http://localhost:8080/api/iteration` , iteration , this.httpOptions) ;
-    // .pipe(catchError(this.handleError<ClientMessage>('New Order', undefined)));
-   }
+    return this.http.post<Iteration>(`${ REGISTRY_URL }iteration`, iteration , this.httpOptions) ;
+  }
 
 }
