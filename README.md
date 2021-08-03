@@ -32,9 +32,15 @@ To-do list:
 * Allowed user to be automatically updated with statuses based on iterations.
 
 ## Getting Started
+```bash
+$ npm install
+$ npm run ng serve
+```
 
 ## Usage
+![](https://i.ibb.co/cLjnXHG/project03-01.png)
 
 ## Contributors
+[August Duet Batch 05/17](https://github.com/1053-August-Duet-Project-Registry)
 
 ## License
